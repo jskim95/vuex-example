@@ -1,6 +1,5 @@
 <template>
   <div>
-    {{count}}
       <button class="region" v-for="region in regions" :key="region"
           v-bind:class="isSelected(region)"
           @click="changeRegion({region:region})">
