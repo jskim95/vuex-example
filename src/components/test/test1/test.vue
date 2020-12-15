@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="pic">  
+    <img :src='pic'>  
   </div>
 </template>
 
@@ -10,12 +10,16 @@
 // ./ : 현재 같은 폴더에 있을때
 
 // ex) 
-// 현재 컴포넌트에서 assets폴더에 있는 logo.png 파일 import 하기
+// 현재 컴포넌트(test.vue)에서 assets폴더에 있는 logo.png 파일 import 하기
+
+// 경로
+// 현재 컴포넌트 경로 : src/components/test/test1/test.vue
+// logo.png 경로 : src/assets/logo.png
 
 // 절대 경로 
-// import pic from '@/assets/logo.png'
+import pic from '@/assets/logo.png'
 // 상대 경로
-import pic from '../../../assets/logo.png' 
+// import pic from '../../../assets/logo.png' 
 
 export default {
   data() {

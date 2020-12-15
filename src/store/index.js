@@ -61,10 +61,6 @@ const store = new Vuex.Store({
     },
     // actions: {
     //     [Constant.DELETE_REGION] : ({state, commit}, payload) => {
-    //         console.log("삭제 actions 실행")
-    //         console.log(state)
-    //         console.log(commit)
-    //         console.log(payload)
     //         store.commit(Constant.DELETE_REGION, payload);
     //     }
     // }

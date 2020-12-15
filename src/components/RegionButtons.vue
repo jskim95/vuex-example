@@ -14,13 +14,18 @@ import { mapMutations, mapGetters } from 'vuex'
 export default {
   name : "RegionButtons",
   computed : 
-  // 1번째 방법
+  // vuex helper
+  // 1. vuex 속성명 동일한 이름으로 선언
   mapGetters([ 'regions', 'currentRegion', ]),
-  // mapState([
-  //   count
-  // ]),
 
-  // 2번째 방법
+  // 2. vuex 속성명 이름을 바꿔서 선언
+  // mapGetters({
+  //   re : 'regions',
+  //   currentRegion : 'currentRegion',
+  // }),
+
+
+  // vuex 기본
   // {
   //   regions() {
   //     return this.$store.getters.regions;
